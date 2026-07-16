@@ -145,6 +145,7 @@
         "<td>" + esc(e.dept || "-") + "</td>" +
         "<td>" + esc(e.role || "-") + "</td>" +
         '<td><span class="' + tagClass + '">' + esc(e.status) + "</span></td>" +
+        "<td>" + esc(e.joinDate || "-") + "</td>" +
         '<td><button class="row-del" data-id="' + esc(e.id) + '">删除</button></td>';
       body.appendChild(tr);
     });
@@ -230,6 +231,7 @@
       dept: f.dept.value.trim(),
       role: f.role.value.trim(),
       status: f.status.value,
+      joinDate: f.joinDate.value,
       avatar: avatarBase64,
       createdAt: new Date().toISOString()
     };
