@@ -1,1 +1,271 @@
-LyogSlNDQ0IgSFIg566h55CG57O757ufIHYzCiAqIOeZu+W9leWHreivge+8mkdpdEh1YiDkuKrkurrorr/pl67ku6TniYzvvIjpqozor4HlkI7lj6/nrqHnkIblt6Xlj7fvvIkKICog5pWw5o2u5oyB5LmF5YyW77yaZW1wbG95ZWVzLmpzb24g5o6o6YCB5YiwIGpzY2NiLWhyIOS7k+W6k++8jOWkmuiuvuWkh+WFseS6qwogKiDlt6XkvZzlj7Dor7vlj5blkIzkuIDku73mlbDmja7lrp7njrDlpJrorr7lpIfnmbvlvZUKICovCihmdW5jdGlvbiAoKSB7CiAgInVzZSBzdHJpY3QiOwoKICB2YXIgT1dORVIgPSAiSlNDQ0IiOwogIHZhciBSRVBPID0gImpzY2NiLWhyIjsKICB2YXIgRklMRV9QQVRIID0gImVtcGxveWVlcy5qc29uIjsKICB2YXIgUkFXX1VSTCA9ICJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vIiArIE9XTkVSICsgIi8iICsgUkVQTyArICIvbWFpbi8iICsgRklMRV9QQVRIOwogIHZhciBBUElfQkFTRSA9ICJodHRwczovL2FwaS5naXRodWIuY29tIjsKICB2YXIgQVBJX0NPTlRFTlRTID0gQVBJX0JBU0UgKyAiL3JlcG9zLyIgKyBPV05FUiArICIvIiArIFJFUE8gKyAiL2NvbnRlbnRzLyIgKyBGSUxFX1BBVEg7CiAgdmFyIExPQ0FMX0tFWSA9ICJqc2NjYjplbXBsb3llZXMiOwogIHZhciBTRVNTSU9OX1RPS0VOX0tFWSA9ICJqc2NjYjpocl90b2tlbiI7CgogIHZhciAkID0gZnVuY3Rpb24gKGlkKSB7IHJldHVybiBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChpZCk7IH07CiAgdmFyIHRva2VuID0gbnVsbDsKCiAgLy8g5LuOIEdpdEh1YiDor7vlj5YgZW1wbG95ZWVzLmpzb24KICBmdW5jdGlvbiBmZXRjaEZyb21HaXRIdWIoKSB7CiAgICByZXR1cm4gZmV0Y2goUkFXX1VSTCArICI/dD0iICsgRGF0ZS5ub3coKSkKICAgICAgLnRoZW4oZnVuY3Rpb24gKHIpIHsKICAgICAgICBpZiAoIXIub2spIHRocm93IG5ldyBFcnJvcigiSFRUUCAiICsgci5zdGF0dXMpOwogICAgICAgIHJldHVybiByLmpzb24oKTsKICAgICAgfSkKICAgICAgLmNhdGNoKGZ1bmN0aW9uICgpIHsgcmV0dXJuIG51bGw7IH0pOwogIH0KCiAgLy8g5LuOIEdpdEh1YiBBUEkg6I635Y+W5paH5Lu2IFNIQe+8iOeUqOS6juabtOaWsO+8iQogIGZ1bmN0aW9uIGdldEZpbGVTaGEoKSB7CiAgICBpZiAoIXRva2VuKSByZXR1cm4gUHJvbWlzZS5yZXNvbHZlKG51bGwpOwogICAgcmV0dXJuIGZldGNoKEFQSV9DT05URU5UUywgewogICAgICBoZWFkZXJzOiB7IEF1dGhvcml6YXRpb246ICJ0b2tlbiAiICsgdG9rZW4sIEFjY2VwdDogImFwcGxpY2F0aW9uL3ZuZC5naXRodWIudjMranNvbiIgfQogICAgfSkudGhlbihmdW5jdGlvbiAocikgewogICAgICBpZiAoIXIub2spIHJldHVybiBudWxsOwogICAgICByZXR1cm4gci5qc29uKCkudGhlbihmdW5jdGlvbiAoZCkgeyByZXR1cm4gZC5zaGE7IH0pOwogICAgfSkuY2F0Y2goZnVuY3Rpb24gKCkgeyByZXR1cm4gbnVsbDsgfSk7CiAgfQoKICAvLyDmjqjpgIEgZW1wbG95ZWVzLmpzb24g5YiwIEdpdEh1YgogIGZ1bmN0aW9uIHB1c2hUb0dpdEh1YihsaXN0KSB7CiAgICBpZiAoIXRva2VuKSByZXR1cm4gUHJvbWlzZS5yZWplY3QoIuacqueZu+W9lSIpOwogICAgcmV0dXJuIGdldEZpbGVTaGEoKS50aGVuKGZ1bmN0aW9uIChzaGEpIHsKICAgICAgdmFyIGNvbnRlbnQgPSBidG9hKHVuZXNjYXBlKGVuY29kZVVSSUNvbXBvbmVudChKU09OLnN0cmluZ2lmeShsaXN0LCBudWxsLCAyKSkpKTsKICAgICAgdmFyIGJvZHkgPSB7CiAgICAgICAgbWVzc2FnZTogInVwZGF0ZSBlbXBsb3llZXMgKCIgKyBsaXN0Lmxlbmd0aCArICIgcmVjb3JkcykiLAogICAgICAgIGNvbnRlbnQ6IGNvbnRlbnQsCiAgICAgICAgc2hhOiBzaGEgfHwgdW5kZWZpbmVkICAvLyB1bmRlZmluZWQgZm9yIGZpcnN0IGNyZWF0ZQogICAgICB9OwogICAgICAvLyDnp7vpmaQgdW5kZWZpbmVkIOWtl+autQogICAgICBpZiAoIXNoYSkgZGVsZXRlIGJvZHkuc2hhOwogICAgICByZXR1cm4gZmV0Y2goQVBJX0NPTlRFTlRTLCB7CiAgICAgICAgbWV0aG9kOiAiUFVUIiwKICAgICAgICBoZWFkZXJzOiB7IEF1dGhvcml6YXRpb246ICJ0b2tlbiAiICsgdG9rZW4sICJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24vanNvbiIsIEFjY2VwdDogImFwcGxpY2F0aW9uL3ZuZC5naXRodWIudjMranNvbiIgfSwKICAgICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShib2R5KQogICAgICB9KS50aGVuKGZ1bmN0aW9uIChyKSB7CiAgICAgICAgaWYgKCFyLm9rKSByZXR1cm4gci50ZXh0KCkudGhlbihmdW5jdGlvbiAodCkgeyB0aHJvdyBuZXcgRXJyb3IoIkdpdEh1YiBBUEkgZXJyb3I6ICIgKyB0KTsgfSk7CiAgICAgICAgcmV0dXJuIHIuanNvbigpOwogICAgICB9KTsKICAgIH0pOwogIH0KCiAgLy8g5ZCM5q2l5pWw5o2u77ya5LuOIEdpdEh1YiDmi4nlj5Yg4oaSIOWQiOW5tuWIsOacrOWcsCDihpIg5YaZ5YWl5pys5Zyw57yT5a2YCiAgZnVuY3Rpb24gc3luY0Zyb21HaXRodWIoKSB7CiAgICByZXR1cm4gZmV0Y2hGcm9tR2l0SHViKCkudGhlbihmdW5jdGlvbiAocmVtb3RlKSB7CiAgICAgIGlmIChyZW1vdGUgJiYgQXJyYXkuaXNBcnJheShyZW1vdGUpKSB7CiAgICAgICAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oTE9DQUxfS0VZLCBKU09OLnN0cmluZ2lmeShyZW1vdGUpKTsKICAgICAgICByZXR1cm4gcmVtb3RlOwogICAgICB9CiAgICAgIHJldHVybiBsb2FkTG9jYWwoKTsKICAgIH0pOwogIH0KCiAgLy8g5L+d5a2Y77ya5pys5ZywICsg6L+c56iLCiAgZnVuY3Rpb24gc2F2ZUFuZFN5bmMobGlzdCkgewogICAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oTE9DQUxfS0VZLCBKU09OLnN0cmluZ2lmeShsaXN0KSk7CiAgICBpZiAodG9rZW4pIHsKICAgICAgcHVzaFRvR2l0SHViKGxpc3QpLmNhdGNoKGZ1bmN0aW9uIChlKSB7CiAgICAgICAgY29uc29sZS53YXJuKCJHaXRIdWIgc3luYyBmYWlsZWQsIGRhdGEgc2F2ZWQgbG9jYWxseSBvbmx5OiIsIGUpOwogICAgICB9KTsKICAgIH0KICB9CgogIGZ1bmN0aW9uIGxvYWRMb2NhbCgpIHsKICAgIHRyeSB7IHJldHVybiBKU09OLnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJdGVtKExPQ0FMX0tFWSkpIHx8IFtdOyB9CiAgICBjYXRjaCAoZSkgeyByZXR1cm4gW107IH0KICB9CgogIC8vIOmqjOivgSB0b2tlbiDmnInmlYjmgKcKICBmdW5jdGlvbiB2ZXJpZnlUb2tlbih0KSB7CiAgICByZXR1cm4gZmV0Y2goQVBJX0JBU0UgKyAiL3VzZXIiLCB7CiAgICAgIGhlYWRlcnM6IHsgQXV0aG9yaXphdGlvbjogInRva2VuICIgKyB0LCBBY2NlcHQ6ICJhcHBsaWNhdGlvbi92bmQuZ2l0aHViLnYzK2pzb24iIH0KICAgIH0pLnRoZW4oZnVuY3Rpb24gKHIpIHsKICAgICAgaWYgKCFyLm9rKSB0aHJvdyBuZXcgRXJyb3IoInRva2VuIOaXoOaViCIpOwogICAgICByZXR1cm4gci5qc29uKCkudGhlbihmdW5jdGlvbiAodSkgeyByZXR1cm4gdS5sb2dpbjsgfSk7CiAgICB9KTsKICB9CgogIGZ1bmN0aW9uIHVubG9jayh0KSB7CiAgICB0b2tlbiA9IHQ7CiAgICBzZXNzaW9uU3RvcmFnZS5zZXRJdGVtKFNFU1NJT05fVE9LRU5fS0VZLCB0KTsKICAgICQoImxvY2siKS5jbGFzc0xpc3QuYWRkKCJoaWRkZW4iKTsKICAgICQoImFwcCIpLmNsYXNzTGlzdC5yZW1vdmUoImhpZGRlbiIpOwogICAgcmVmcmVzaERhdGEoKTsKICB9CiAgZnVuY3Rpb24gbG9jaygpIHsKICAgIHRva2VuID0gbnVsbDsKICAgIHNlc3Npb25TdG9yYWdlLnJlbW92ZUl0ZW0oU0VTU0lPTl9UT0tFTl9LRVkpOwogICAgJCgiYXBwIikuY2xhc3NMaXN0LmFkZCgiaGlkZGVuIik7CiAgICAkKCJsb2NrIikuY2xhc3NMaXN0LnJlbW92ZSgiaGlkZGVuIik7CiAgICAkKCJsb2NrLWVycm9yIikudGV4dENvbnRlbnQgPSAiIjsKICB9CgogIC8vIOWIt+aWsOaVsOaNruW5tua4suafkwogIGZ1bmN0aW9uIHJlZnJlc2hEYXRhKCkgewogICAgdmFyIHN0YXR1cyA9ICQoInN5bmMtc3RhdHVzIik7CiAgICBpZiAoc3RhdHVzKSBzdGF0dXMudGV4dENvbnRlbnQgPSAi5ZCM5q2l5Lit4oCmIjsKICAgIHN5bmNGcm9tR2l0aHViKCkudGhlbihmdW5jdGlvbiAobGlzdCkgewogICAgICByZW5kZXIobGlzdCk7CiAgICAgIGlmIChzdGF0dXMpIHN0YXR1cy50ZXh0Q29udGVudCA9ICLlt7LlkIzmraUg4pyTIjsKICAgIH0pLmNhdGNoKGZ1bmN0aW9uICgpIHsKICAgICAgcmVuZGVyKGxvYWRMb2NhbCgpKTsKICAgICAgaWYgKHN0YXR1cykgc3RhdHVzLnRleHRDb250ZW50ID0gIuacrOWcsOaooeW8jyI7CiAgICB9KTsKICB9CgogIGZ1bmN0aW9uIHJlbmRlcihsaXN0KSB7CiAgICB2YXIgdG90YWwgPSBsaXN0Lmxlbmd0aDsKICAgIHZhciBhY3RpdmUgPSBsaXN0LmZpbHRlcihmdW5jdGlvbiAoZSkgeyByZXR1cm4gZS5zdGF0dXMgPT09ICLlnKjogYwiOyB9KS5sZW5ndGg7CiAgICAkKCJzdGF0LXRvdGFsIikudGV4dENvbnRlbnQgPSB0b3RhbDsKICAgICQoInN0YXQtYWN0aXZlIikudGV4dENvbnRlbnQgPSBhY3RpdmU7CiAgICAkKCJzdGF0LWRpc2FibGVkIikudGV4dENvbnRlbnQgPSB0b3RhbCAtIGFjdGl2ZTsKCiAgICB2YXIgYm9keSA9ICQoImVtcC1ib2R5Iik7CiAgICBib2R5LmlubmVySFRNTCA9ICIiOwogICAgJCgiZW1wdHktdGlwIikuc3R5bGUuZGlzcGxheSA9IHRvdGFsID8gIm5vbmUiIDogImJsb2NrIjsKICAgIGxpc3QuZm9yRWFjaChmdW5jdGlvbiAoZSkgewogICAgICB2YXIgdHIgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCJ0ciIpOwogICAgICB2YXIgdGFnQ2xhc3MgPSBlLnN0YXR1cyA9PT0gIuWcqOiBjCIgPyAidGFnIGFjdGl2ZSIgOiAidGFnIGRpc2FibGVkIjsKICAgICAgdHIuaW5uZXJIVE1MID0KICAgICAgICAiPHRkPiIgKyBlc2MoZS5pZCkgKyAiPC90ZD4iICsKICAgICAgICAiPHRkPiIgKyBlc2MoZS5uYW1lKSArICI8L3RkPiIgKwogICAgICAgICI8dGQ+IiArIGVzYyhlLmRlcHQgfHwgIi0iKSArICI8L3RkPiIgKwogICAgICAgICI8dGQ+IiArIGVzYyhlLnJvbGUgfHwgIi0iKSArICI8L3RkPiIgKwogICAgICAgICc8dGQ+PHNwYW4gY2xhc3M9IicgKyB0YWdDbGFzcyArICciPicgKyBlc2MoZS5zdGF0dXMpICsgIjwvc3Bhbj48L3RkPiIgKwogICAgICAgICc8dGQ+PGJ1dHRvbiBjbGFzcz0icm93LWRlbCIgZGF0YS1pZD0iJyArIGVzYyhlLmlkKSArICciPuWIoOmZpDwvYnV0dG9uPjwvdGQ+JzsKICAgICAgYm9keS5hcHBlbmRDaGlsZCh0cik7CiAgICB9KTsKICAgIEFycmF5LnByb3RvdHlwZS5mb3JFYWNoLmNhbGwoYm9keS5xdWVyeVNlbGVjdG9yQWxsKCIucm93LWRlbCIpLCBmdW5jdGlvbiAoYnRuKSB7CiAgICAgIGJ0bi5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsIGZ1bmN0aW9uICgpIHsgcmVtb3ZlRW1wKGJ0bi5nZXRBdHRyaWJ1dGUoImRhdGEtaWQiKSk7IH0pOwogICAgfSk7CiAgfQoKICBmdW5jdGlvbiBlc2MocykgewogICAgcmV0dXJuIFN0cmluZyhzID09IG51bGwgPyAiIiA6IHMpLnJlcGxhY2UoL1smPD4iJ10vZywgZnVuY3Rpb24gKGMpIHsKICAgICAgcmV0dXJuIHsgIiYiOiAiJmFtcDsiLCAiPCI6ICImbHQ7IiwgIj4iOiAiJmd0OyIsICciJzogIiZxdW90OyIsICInIjogIiYjMzk7IiB9W2NdOwogICAgfSk7CiAgfQoKICBmdW5jdGlvbiBhZGRFbXAoZGF0YSkgewogICAgdmFyIGxpc3QgPSBsb2FkTG9jYWwoKTsKICAgIGlmIChsaXN0LnNvbWUoZnVuY3Rpb24gKGUpIHsgcmV0dXJuIGUuaWQgPT09IGRhdGEuaWQ7IH0pKSB7CiAgICAgIGFsZXJ0KCLlt6Xlj7cgIiArIGRhdGEuaWQgKyAiIOW3suWtmOWcqCIpOwogICAgICByZXR1cm4gZmFsc2U7CiAgICB9CiAgICBsaXN0LnB1c2goZGF0YSk7CiAgICBzYXZlQW5kU3luYyhsaXN0KTsKICAgIHJlbmRlcihsaXN0KTsKICAgIHJldHVybiB0cnVlOwogIH0KCiAgZnVuY3Rpb24gcmVtb3ZlRW1wKGlkKSB7CiAgICBpZiAoIWNvbmZpcm0oIuehruiupOWIoOmZpOW3peWPtyAiICsgaWQgKyAi77yfIikpIHJldHVybjsKICAgIHZhciBsaXN0ID0gbG9hZExvY2FsKCkuZmlsdGVyKGZ1bmN0aW9uIChlKSB7IHJldHVybiBlLmlkICE9PSBpZDsgfSk7CiAgICBzYXZlQW5kU3luYyhsaXN0KTsKICAgIHJlbmRlcihsaXN0KTsKICB9CgogIGZ1bmN0aW9uIGdlbklkKCkgewogICAgdmFyIGxpc3QgPSBsb2FkTG9jYWwoKTsKICAgIHZhciBtYXggPSAwOwogICAgbGlzdC5mb3JFYWNoKGZ1bmN0aW9uIChlKSB7CiAgICAgIHZhciBtID0gL15KU0NDQihcZCspJC8uZXhlYyhlLmlkIHx8ICIiKTsKICAgICAgaWYgKG0pIG1heCA9IE1hdGgubWF4KG1heCwgcGFyc2VJbnQobVsxXSwgMTApKTsKICAgIH0pOwogICAgcmV0dXJuICJKU0NDQiIgKyBTdHJpbmcobWF4ICsgMSkucGFkU3RhcnQoNCwgIjAiKTsKICB9CgogIC8vID09PT09PSDkuovku7bnu5HlrpogPT09PT09CgogIC8vIFRva2VuIOeZu+W9lQogICQoInVubG9jay1mb3JtIikuYWRkRXZlbnRMaXN0ZW5lcigic3VibWl0IiwgZnVuY3Rpb24gKGV2KSB7CiAgICBldi5wcmV2ZW50RGVmYXVsdCgpOwogICAgdmFyIHYgPSAkKCJ0b2tlbi1pbnB1dCIpLnZhbHVlLnRyaW0oKTsKICAgIGlmICghdikgeyAkKCJsb2NrLWVycm9yIikudGV4dENvbnRlbnQgPSAi6K+36L6T5YWlIEdpdEh1YiBUb2tlbiI7IHJldHVybjsgfQogICAgJCgibG9jay1lcnJvciIpLnRleHRDb250ZW50ID0gIumqjOivgeS4reKApiI7CiAgICB2ZXJpZnlUb2tlbih2KS50aGVuKGZ1bmN0aW9uIChsb2dpbikgewogICAgICAkKCJsb2NrLWVycm9yIikudGV4dENvbnRlbnQgPSAi6aqM6K+B6YCa6L+H77yM5qyi6L+OICIgKyBsb2dpbjsKICAgICAgdW5sb2NrKHYpOwogICAgfSkuY2F0Y2goZnVuY3Rpb24gKCkgewogICAgICAkKCJsb2NrLWVycm9yIikudGV4dENvbnRlbnQgPSAiVG9rZW4g5peg5pWI77yM6K+35qOA5p+l5ZCO6YeN6K+VIjsKICAgIH0pOwogIH0pOwoKICAkKCJsb2NrLWJ0biIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgbG9jayk7CgogIC8vIOa3u+WKoC/liKDpmaTlt6Xlj7cKICAkKCJlbXAtZm9ybSIpLmFkZEV2ZW50TGlzdGVuZXIoInN1Ym1pdCIsIGZ1bmN0aW9uIChldikgewogICAgZXYucHJldmVudERlZmF1bHQoKTsKICAgIHZhciBmID0gZXYudGFyZ2V0OwogICAgdmFyIGRhdGEgPSB7CiAgICAgIGlkOiBmLmlkLnZhbHVlLnRyaW0oKSwKICAgICAgbmFtZTogZi5uYW1lLnZhbHVlLnRyaW0oKSwKICAgICAgZGVwdDogZi5kZXB0LnZhbHVlLnRyaW0oKSwKICAgICAgcm9sZTogZi5yb2xlLnZhbHVlLnRyaW0oKSwKICAgICAgc3RhdHVzOiBmLnN0YXR1cy52YWx1ZSwKICAgICAgY3JlYXRlZEF0OiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCkKICAgIH07CiAgICBpZiAoIWRhdGEuaWQgfHwgIWRhdGEubmFtZSkgeyBhbGVydCgi5bel5Y+35ZKM5aeT5ZCN5Li65b+F5aGr6aG5Iik7IHJldHVybjsgfQogICAgaWYgKGFkZEVtcChkYXRhKSkgZi5yZXNldCgpOwogIH0pOwoKICAkKCJnZW4tYnRuIikuYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCBmdW5jdGlvbiAoKSB7CiAgICB2YXIgZiA9ICQoImVtcC1mb3JtIik7CiAgICBpZiAoIWYuaWQudmFsdWUudHJpbSgpKSBmLmlkLnZhbHVlID0gZ2VuSWQoKTsKICB9KTsKCiAgJCgiZXhwb3J0LWJ0biIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgZnVuY3Rpb24gKCkgewogICAgdmFyIGJsb2IgPSBuZXcgQmxvYihbSlNPTi5zdHJpbmdpZnkobG9hZExvY2FsKCksIG51bGwsIDIpXSwgeyB0eXBlOiAiYXBwbGljYXRpb24vanNvbiIgfSk7CiAgICB2YXIgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoImEiKTsKICAgIGEuaHJlZiA9IFVSTC5jcmVhdGVPYmplY3RVUkwoYmxvYik7CiAgICBhLmRvd25sb2FkID0gImpzY2NiLWVtcGxveWVlcy5qc29uIjsKICAgIGEuY2xpY2soKTsKICB9KTsKCiAgJCgiaW1wb3J0LWJ0biIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgZnVuY3Rpb24gKCkgewogICAgJCgiaW1wb3J0LWlucHV0IikuY2xpY2soKTsKICB9KTsKICAkKCJpbXBvcnQtaW5wdXQiKS5hZGRFdmVudExpc3RlbmVyKCJjaGFuZ2UiLCBmdW5jdGlvbiAoZXYpIHsKICAgIHZhciBmaWxlID0gZXYudGFyZ2V0LmZpbGVzWzBdOwogICAgaWYgKCFmaWxlKSByZXR1cm47CiAgICB2YXIgcmVhZGVyID0gbmV3IEZpbGVSZWFkZXIoKTsKICAgIHJlYWRlci5vbmxvYWQgPSBmdW5jdGlvbiAoKSB7CiAgICAgIHRyeSB7CiAgICAgICAgdmFyIGFyciA9IEpTT04ucGFyc2UocmVhZGVyLnJlc3VsdCk7CiAgICAgICAgaWYgKCFBcnJheS5pc0FycmF5KGFycikpIHRocm93IG5ldyBFcnJvcigi5qC85byP6ZSZ6K+vIik7CiAgICAgICAgc2F2ZUFuZFN5bmMoYXJyKTsKICAgICAgICByZW5kZXIoYXJyKTsKICAgICAgICBhbGVydCgi5bey5a+85YWlICIgKyBhcnIubGVuZ3RoICsgIiDmnaHlt6Xlj7ciKTsKICAgICAgfSBjYXRjaCAoZSkgeyBhbGVydCgi5a+85YWl5aSx6LSl77yaIiArIGUubWVzc2FnZSk7IH0KICAgIH07CiAgICByZWFkZXIucmVhZEFzVGV4dChmaWxlKTsKICAgIGV2LnRhcmdldC52YWx1ZSA9ICIiOwogIH0pOwoKICAkKCJzeW5jLWJ0biIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgZnVuY3Rpb24gKCkgewogICAgcmVmcmVzaERhdGEoKTsKICB9KTsKCiAgLy8g5ZCv5Yqo77ya5qOA5p+lIHNlc3Npb24g5Lit5piv5ZCm5pyJIHRva2VuCiAgdmFyIHNhdmVkVG9rZW4gPSBzZXNzaW9uU3RvcmFnZS5nZXRJdGVtKFNFU1NJT05fVE9LRU5fS0VZKTsKICBpZiAoc2F2ZWRUb2tlbikgewogICAgdmVyaWZ5VG9rZW4oc2F2ZWRUb2tlbikudGhlbihmdW5jdGlvbiAoKSB7CiAgICAgIHVubG9jayhzYXZlZFRva2VuKTsKICAgIH0pLmNhdGNoKGZ1bmN0aW9uICgpIHsKICAgICAgc2Vzc2lvblN0b3JhZ2UucmVtb3ZlSXRlbShTRVNTSU9OX1RPS0VOX0tFWSk7CiAgICB9KTsKICB9Cn0pKCk7Cg==
+/* JSCCB HR 管理系统 v3
+ * 登录凭证：GitHub 个人访问令牌（验证后可管理工号）
+ * 数据持久化：employees.json 推送到 jsccb-hr 仓库，多设备共享
+ * 工作台读取同一份数据实现多设备登录
+ */
+(function () {
+  "use strict";
+
+  var OWNER = "JSCCB";
+  var REPO = "jsccb-hr";
+  var FILE_PATH = "employees.json";
+  var RAW_URL = "https://raw.githubusercontent.com/" + OWNER + "/" + REPO + "/main/" + FILE_PATH;
+  var API_BASE = "https://api.github.com";
+  var API_CONTENTS = API_BASE + "/repos/" + OWNER + "/" + REPO + "/contents/" + FILE_PATH;
+  var LOCAL_KEY = "jsccb:employees";
+  var SESSION_TOKEN_KEY = "jsccb:hr_token";
+
+  var $ = function (id) { return document.getElementById(id); };
+  var token = null;
+
+  // 从 GitHub 读取 employees.json
+  function fetchFromGitHub() {
+    return fetch(RAW_URL + "?t=" + Date.now())
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .catch(function () { return null; });
+  }
+
+  // 从 GitHub API 获取文件 SHA（用于更新）
+  function getFileSha() {
+    if (!token) return Promise.resolve(null);
+    return fetch(API_CONTENTS, {
+      headers: { Authorization: "token " + token, Accept: "application/vnd.github.v3+json" }
+    }).then(function (r) {
+      if (!r.ok) return null;
+      return r.json().then(function (d) { return d.sha; });
+    }).catch(function () { return null; });
+  }
+
+  // 推送 employees.json 到 GitHub
+  function pushToGitHub(list) {
+    if (!token) return Promise.reject("未登录");
+    return getFileSha().then(function (sha) {
+      var content = btoa(unescape(encodeURIComponent(JSON.stringify(list, null, 2))));
+      var body = {
+        message: "update employees (" + list.length + " records)",
+        content: content,
+        sha: sha || undefined  // undefined for first create
+      };
+      // 移除 undefined 字段
+      if (!sha) delete body.sha;
+      return fetch(API_CONTENTS, {
+        method: "PUT",
+        headers: { Authorization: "token " + token, "Content-Type": "application/json", Accept: "application/vnd.github.v3+json" },
+        body: JSON.stringify(body)
+      }).then(function (r) {
+        if (!r.ok) return r.text().then(function (t) { throw new Error("GitHub API error: " + t); });
+        return r.json();
+      });
+    });
+  }
+
+  // 同步数据：从 GitHub 拉取 → 合并到本地 → 写入本地缓存
+  function syncFromGithub() {
+    return fetchFromGitHub().then(function (remote) {
+      if (remote && Array.isArray(remote)) {
+        localStorage.setItem(LOCAL_KEY, JSON.stringify(remote));
+        return remote;
+      }
+      return loadLocal();
+    });
+  }
+
+  // 保存：本地 + 远程
+  function saveAndSync(list) {
+    localStorage.setItem(LOCAL_KEY, JSON.stringify(list));
+    if (token) {
+      pushToGitHub(list).catch(function (e) {
+        console.warn("GitHub sync failed, data saved locally only:", e);
+      });
+    }
+  }
+
+  function loadLocal() {
+    try { return JSON.parse(localStorage.getItem(LOCAL_KEY)) || []; }
+    catch (e) { return []; }
+  }
+
+  // 验证 token 有效性
+  function verifyToken(t) {
+    return fetch(API_BASE + "/user", {
+      headers: { Authorization: "token " + t, Accept: "application/vnd.github.v3+json" }
+    }).then(function (r) {
+      if (!r.ok) throw new Error("token 无效");
+      return r.json().then(function (u) { return u.login; });
+    });
+  }
+
+  function unlock(t) {
+    token = t;
+    sessionStorage.setItem(SESSION_TOKEN_KEY, t);
+    $("lock").classList.add("hidden");
+    $("app").classList.remove("hidden");
+    refreshData();
+  }
+  function lock() {
+    token = null;
+    sessionStorage.removeItem(SESSION_TOKEN_KEY);
+    $("app").classList.add("hidden");
+    $("lock").classList.remove("hidden");
+    $("lock-error").textContent = "";
+  }
+
+  // 刷新数据并渲染
+  function refreshData() {
+    var status = $("sync-status");
+    if (status) status.textContent = "同步中…";
+    syncFromGithub().then(function (list) {
+      render(list);
+      if (status) status.textContent = "已同步 ✓";
+    }).catch(function () {
+      render(loadLocal());
+      if (status) status.textContent = "本地模式";
+    });
+  }
+
+  function render(list) {
+    var total = list.length;
+    var active = list.filter(function (e) { return e.status === "在职"; }).length;
+    $("stat-total").textContent = total;
+    $("stat-active").textContent = active;
+    $("stat-disabled").textContent = total - active;
+
+    var body = $("emp-body");
+    body.innerHTML = "";
+    $("empty-tip").style.display = total ? "none" : "block";
+    list.forEach(function (e) {
+      var tr = document.createElement("tr");
+      var tagClass = e.status === "在职" ? "tag active" : "tag disabled";
+      tr.innerHTML =
+        "<td>" + esc(e.id) + "</td>" +
+        "<td>" + esc(e.name) + "</td>" +
+        "<td>" + esc(e.dept || "-") + "</td>" +
+        "<td>" + esc(e.role || "-") + "</td>" +
+        '<td><span class="' + tagClass + '">' + esc(e.status) + "</span></td>" +
+        '<td><button class="row-del" data-id="' + esc(e.id) + '">删除</button></td>';
+      body.appendChild(tr);
+    });
+    Array.prototype.forEach.call(body.querySelectorAll(".row-del"), function (btn) {
+      btn.addEventListener("click", function () { removeEmp(btn.getAttribute("data-id")); });
+    });
+  }
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function addEmp(data) {
+    var list = loadLocal();
+    if (list.some(function (e) { return e.id === data.id; })) {
+      alert("工号 " + data.id + " 已存在");
+      return false;
+    }
+    list.push(data);
+    saveAndSync(list);
+    render(list);
+    return true;
+  }
+
+  function removeEmp(id) {
+    if (!confirm("确认删除工号 " + id + "？")) return;
+    var list = loadLocal().filter(function (e) { return e.id !== id; });
+    saveAndSync(list);
+    render(list);
+  }
+
+  function genId() {
+    var list = loadLocal();
+    var max = 0;
+    list.forEach(function (e) {
+      var m = /^JSCCB(\d+)$/.exec(e.id || "");
+      if (m) max = Math.max(max, parseInt(m[1], 10));
+    });
+    return "JSCCB" + String(max + 1).padStart(4, "0");
+  }
+
+  // ====== 事件绑定 ======
+
+  // Token 登录
+  $("unlock-form").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var v = $("token-input").value.trim();
+    if (!v) { $("lock-error").textContent = "请输入 GitHub Token"; return; }
+    $("lock-error").textContent = "验证中…";
+    verifyToken(v).then(function (login) {
+      $("lock-error").textContent = "验证通过，欢迎 " + login;
+      unlock(v);
+    }).catch(function () {
+      $("lock-error").textContent = "Token 无效，请检查后重试";
+    });
+  });
+
+  $("lock-btn").addEventListener("click", lock);
+
+  // 添加/删除工号
+  $("emp-form").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var f = ev.target;
+    var data = {
+      id: f.id.value.trim(),
+      name: f.name.value.trim(),
+      dept: f.dept.value.trim(),
+      role: f.role.value.trim(),
+      status: f.status.value,
+      createdAt: new Date().toISOString()
+    };
+    if (!data.id || !data.name) { alert("工号和姓名为必填项"); return; }
+    if (addEmp(data)) f.reset();
+  });
+
+  $("gen-btn").addEventListener("click", function () {
+    var f = $("emp-form");
+    if (!f.id.value.trim()) f.id.value = genId();
+  });
+
+  $("export-btn").addEventListener("click", function () {
+    var blob = new Blob([JSON.stringify(loadLocal(), null, 2)], { type: "application/json" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "jsccb-employees.json";
+    a.click();
+  });
+
+  $("import-btn").addEventListener("click", function () {
+    $("import-input").click();
+  });
+  $("import-input").addEventListener("change", function (ev) {
+    var file = ev.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      try {
+        var arr = JSON.parse(reader.result);
+        if (!Array.isArray(arr)) throw new Error("格式错误");
+        saveAndSync(arr);
+        render(arr);
+        alert("已导入 " + arr.length + " 条工号");
+      } catch (e) { alert("导入失败：" + e.message); }
+    };
+    reader.readAsText(file);
+    ev.target.value = "";
+  });
+
+  $("sync-btn").addEventListener("click", function () {
+    refreshData();
+  });
+
+  // 启动：检查 session 中是否有 token
+  var savedToken = sessionStorage.getItem(SESSION_TOKEN_KEY);
+  if (savedToken) {
+    verifyToken(savedToken).then(function () {
+      unlock(savedToken);
+    }).catch(function () {
+      sessionStorage.removeItem(SESSION_TOKEN_KEY);
+    });
+  }
+})();

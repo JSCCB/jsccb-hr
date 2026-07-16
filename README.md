@@ -1,1 +1,27 @@
-IyBKU0NDQiDCtyBIUiDnrqHnkIbns7vnu5/vvIhqc2NjYi1ocu+8iQoK6ZO26KGM5Lq65Yqb6LWE5rqQ5ZCO5Y+w77yM55So5LqO566h55CG5ZGY5belICoq5bel5Y+3KirjgILlt6Xlj7fmmK/jgIxKU0NDQuW3peS9nOWPsOOAjeeahOeZu+W9leWHreivgeOAggoKIyMg5Yqf6IO9Ci0g8J+UkCAqKuS7pOeJjOeZu+W9lSoq77ya6L+b5YWl57O757uf6ZyA6L6T5YWlIEhSIOeuoeeQhuS7pOeJjO+8iOmSpeWMme+8ieOAgum7mOiupOS7pOeJjCBgSlNDQ0ItSFItMjAyNmDvvIzlj6/lnKggYGFzc2V0cy9qcy9hcHAuanNgIOmhtumDqCBgSFJfVE9LRU5gIOS/ruaUueOAggotIOKelSAqKuaWsOWinuW3peWPtyoq77ya5bel5Y+344CB5aeT5ZCN44CB6YOo6Zeo44CB5bKX5L2N44CB54q25oCB77yI5Zyo6IGML+WBnOeUqO+8ieOAggotIPCfl5EgKirliKDpmaTlt6Xlj7cqKu+8muS4gOmUruWBnOeUqC/liKDpmaTjgIIKLSDwn5OkICoq5a+85YWlL+WvvOWHuioq77ya5LulIEpTT04g5aSH5Lu95oiW6L+B56e75bel5Y+35pWw5o2u44CCCi0g8J+UoiAqKuW3peWPt+eUn+aIkCoq77ya5oyJIGBKU0NDQjAwMDFgIOinhOWImeiHquWKqOmhuuW7tuOAggoKIyMg5pWw5o2u6IGU5YqoCuW3peWPt+S/neWtmOWcqOa1j+iniOWZqCBgbG9jYWxTdG9yYWdlYCDplK4gYGpzY2NiOmVtcGxveWVlc2DjgIIK5bCG5pys5LuT5bqT5LiOIGBqc2NjYi13b3JrYmVuY2hg44CBYGpzY2NiLWNyZWRpdC1jYXJkYCDkuIDlkIzpg6jnvbLliLAgR2l0SHViIFBhZ2VzIOWQju+8jOS4ieiAheWkhOS6juWQjOS4gOWfn+WQjSBganNjY2IuZ2l0aHViLmlvYO+8jCoq5YWx5LqrIGxvY2FsU3RvcmFnZSoq4oCU4oCUSFIg5Zyo5q2k5Yib5bu655qE5bel5Y+35Y+v55u05o6l5L2c5Li65bel5L2c5Y+w55m75b2V5Yet6K+B77yM5peg6ZyA6aKd5aSW5ZCM5q2l44CCCgojIyDmnKzlnLDov5DooYwKYGBgYmFzaAojIOS7u+aEj+mdmeaAgeacjeWKoeWZqOWNs+WPrwpweXRob24gLW0gaHR0cC5zZXJ2ZXIgODA4MAojIOaJk+W8gCBodHRwOi8vbG9jYWxob3N0OjgwODAKYGBgCgojIyDpg6jnvbLliLAgR2l0SHViIFBhZ2VzCjEuIOS7k+W6kyBTZXR0aW5ncyDihpIgUGFnZXMg4oaSIFNvdXJjZSDpgInmi6kgYG1haW5gIOWIhuaUryBgLyAocm9vdClg44CCCjIuIOiuv+mXriBgaHR0cHM6Ly9qc2NjYi5naXRodWIuaW8vanNjY2ItaHIvYOOAggoKPiDku6TniYzlsZ7kuo7liY3nq6/luLjph4/vvIzku4XpgILlkIjmvJTnpLov5YaF572R5Zy65pmv44CC55Sf5Lqn546v5aKD5bqU5bCG5Luk54mM5qCh6aqM56e75Yiw5ZCO56uv44CCCg==
+# JSCCB · HR 管理系统（jsccb-hr）
+
+银行人力资源后台，用于管理员工 **工号**。工号是「JSCCB工作台」的登录凭证。
+
+## 功能
+- 🔐 **令牌登录**：进入系统需输入 HR 管理令牌（钥匙）。默认令牌 `JSCCB-HR-2026`，可在 `assets/js/app.js` 顶部 `HR_TOKEN` 修改。
+- ➕ **新增工号**：工号、姓名、部门、岗位、状态（在职/停用）。
+- 🗑 **删除工号**：一键停用/删除。
+- 📤 **导入/导出**：以 JSON 备份或迁移工号数据。
+- 🔢 **工号生成**：按 `JSCCB0001` 规则自动顺延。
+
+## 数据联动
+工号保存在浏览器 `localStorage` 键 `jsccb:employees`。
+将本仓库与 `jsccb-workbench`、`jsccb-credit-card` 一同部署到 GitHub Pages 后，三者处于同一域名 `jsccb.github.io`，**共享 localStorage**——HR 在此创建的工号可直接作为工作台登录凭证，无需额外同步。
+
+## 本地运行
+```bash
+# 任意静态服务器即可
+python -m http.server 8080
+# 打开 http://localhost:8080
+```
+
+## 部署到 GitHub Pages
+1. 仓库 Settings → Pages → Source 选择 `main` 分支 `/ (root)`。
+2. 访问 `https://jsccb.github.io/jsccb-hr/`。
+
+> 令牌属于前端常量，仅适合演示/内网场景。生产环境应将令牌校验移到后端。
