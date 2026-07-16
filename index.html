@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>JSCCB · HR管理系统</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- 令牌登录锁屏 -->
+  <div id="lock" class="lock-screen">
+    <div class="lock-card">
+      <div class="brand">
+        <span class="logo">JSCCB</span>
+        <span class="brand-sub">人力资源管理系统</span>
+      </div>
+      <h1>令牌登录</h1>
+      <p class="lock-tip">请输入 HR 管理令牌以进入系统</p>
+      <form id="unlock-form" autocomplete="off">
+        <input id="token-input" type="password" placeholder="管理令牌 Token" inputmode="text" />
+        <button type="submit" class="btn-primary">解 锁</button>
+      </form>
+      <p id="lock-error" class="error-text"></p>
+    </div>
+  </div>
+
+  <!-- 主体 -->
+  <div id="app" class="app hidden">
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="logo">JSCCB</span>
+        <span class="topbar-title">HR 工号管理</span>
+      </div>
+      <button id="lock-btn" class="btn-ghost">锁定</button>
+    </header>
+
+    <main class="container">
+      <section class="stats">
+        <div class="stat-card">
+          <div class="stat-num" id="stat-total">0</div>
+          <div class="stat-label">工号总数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" id="stat-active">0</div>
+          <div class="stat-label">在职</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" id="stat-disabled">0</div>
+          <div class="stat-label">停用</div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>新增工号</h2>
+        </div>
+        <form id="emp-form" class="emp-form" autocomplete="off">
+          <div class="field">
+            <label>工号 *</label>
+            <input name="id" placeholder="如 JSCCB0001" required />
+          </div>
+          <div class="field">
+            <label>姓名 *</label>
+            <input name="name" placeholder="员工姓名" required />
+          </div>
+          <div class="field">
+            <label>部门</label>
+            <input name="dept" placeholder="如 信用卡中心" />
+          </div>
+          <div class="field">
+            <label>岗位</label>
+            <input name="role" placeholder="如 客户经理" />
+          </div>
+          <div class="field">
+            <label>状态</label>
+            <select name="status">
+              <option value="在职">在职</option>
+              <option value="停用">停用</option>
+            </select>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">添加工号</button>
+            <button type="button" id="gen-btn" class="btn-ghost">生成工号</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>工号列表</h2>
+          <div class="panel-tools">
+            <button id="export-btn" class="btn-ghost">导出</button>
+            <label class="btn-ghost file-btn">导入
+              <input id="import-input" type="file" accept="application/json" hidden />
+            </label>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table id="emp-table">
+            <thead>
+              <tr><th>工号</th><th>姓名</th><th>部门</th><th>岗位</th><th>状态</th><th>操作</th></tr>
+            </thead>
+            <tbody id="emp-body"></tbody>
+          </table>
+          <p id="empty-tip" class="empty-tip">暂无工号，请在上方新增。</p>
+        </div>
+      </section>
+
+      <p class="hint">提示：工号数据保存在本机（localStorage，键 <code>jsccb:employees</code>）。部署到 GitHub Pages 后，同一域名下的「JSCCB工作台」可直接读取这些工号作为登录凭证。</p>
+    </main>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
