@@ -206,6 +206,20 @@
 
   $("lock-btn").addEventListener("click", lock);
 
+  // 头像预览
+  var avatarBase64 = "";
+  $("avatar-input").addEventListener("change", function(ev) {
+    var file = ev.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      avatarBase64 = e.target.result;
+      $("avatar-preview").src = avatarBase64;
+      $("avatar-preview").style.display = "block";
+    };
+    reader.readAsDataURL(file);
+  });
+
   // 添加/删除工号
   $("emp-form").addEventListener("submit", function (ev) {
     ev.preventDefault();
@@ -216,10 +230,15 @@
       dept: f.dept.value.trim(),
       role: f.role.value.trim(),
       status: f.status.value,
+      avatar: avatarBase64,
       createdAt: new Date().toISOString()
     };
     if (!data.id || !data.name) { alert("工号和姓名为必填项"); return; }
-    if (addEmp(data)) f.reset();
+    if (addEmp(data)) {
+      f.reset();
+      avatarBase64 = "";
+      $("avatar-preview").style.display = "none";
+    }
   });
 
   $("gen-btn").addEventListener("click", function () {
