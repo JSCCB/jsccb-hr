@@ -1,13 +1,13 @@
-/* JSCCB HR 管理系统
+/* JSCCB HR 管理系统 v2
  * 工号数据保存在 localStorage 键 `jsccb:employees`，可被同域下的 JSCCB工作台 读取作为登录凭证。
  */
 (function () {
   "use strict";
 
-  // HR 管理令牌（钥匙）。可在此修改。部署后请告知 HR 人员此令牌。
+  // HR 管理令牌（钥匙）
   var HR_TOKEN = "JSCCB-HR-2026";
   var STORE_KEY = "jsccb:employees";
-  var SESSION_KEY = "jsccb:hr_unlocked";
+  var SESSION_KEY = "jsccb:hr_unlocked_v2";
 
   var $ = function (id) { return document.getElementById(id); };
 
@@ -50,7 +50,7 @@
         "<td>" + esc(e.dept || "-") + "</td>" +
         "<td>" + esc(e.role || "-") + "</td>" +
         '<td><span class="' + tagClass + '">' + esc(e.status) + "</span></td>" +
-        '<td><button class="row-del" data-id="' + esc(e.id) + '">删除</button></td>";
+        '<td><button class="row-del" data-id="' + esc(e.id) + '">删除</button></td>';
       body.appendChild(tr);
     });
     Array.prototype.forEach.call(body.querySelectorAll(".row-del"), function (btn) {
@@ -96,11 +96,12 @@
   $("unlock-form").addEventListener("submit", function (ev) {
     ev.preventDefault();
     var v = $("token-input").value.trim();
+    console.log("Token input:", v, "Expected:", HR_TOKEN);
     if (v === HR_TOKEN) {
       localStorage.setItem(SESSION_KEY, "1");
       unlock();
     } else {
-      $("lock-error").textContent = "令牌错误，请重试。";
+      $("lock-error").textContent = "令牌错误，请重试。提示：默认令牌 JSCCB-HR-2026";
     }
   });
 
@@ -151,6 +152,8 @@
     ev.target.value = "";
   });
 
-  // 启动：若已解锁（同会话）直接进
-  if (localStorage.getItem(SESSION_KEY) === "1") unlock();
+  // 启动：若已解锁直接进
+  if (localStorage.getItem(SESSION_KEY) === "1") {
+    unlock();
+  }
 })();
