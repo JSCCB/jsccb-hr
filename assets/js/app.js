@@ -207,17 +207,41 @@
 
   $("lock-btn").addEventListener("click", lock);
 
-  // 头像预览
+  // 头像预览 + 压缩（解决大图上传失败问题）
   var avatarBase64 = "";
+  var MAX_AVATAR = 256;      // 最长边像素
+  var AVATAR_QUALITY = 0.82; // JPEG 质量
   $("avatar-input").addEventListener("change", function(ev) {
     var file = ev.target.files[0];
     if (!file) return;
+    if (!/^image\//.test(file.type)) { alert("请选择图片文件"); ev.target.value = ""; return; }
     var reader = new FileReader();
     reader.onload = function(e) {
-      avatarBase64 = e.target.result;
-      $("avatar-preview").src = avatarBase64;
-      $("avatar-preview").style.display = "block";
+      var img = new Image();
+      img.onload = function() {
+        try {
+          var w = img.width, h = img.height;
+          if (w > h && w > MAX_AVATAR) { h = Math.round(h * MAX_AVATAR / w); w = MAX_AVATAR; }
+          else if (h > MAX_AVATAR) { w = Math.round(w * MAX_AVATAR / h); h = MAX_AVATAR; }
+          var canvas = document.createElement("canvas");
+          canvas.width = w; canvas.height = h;
+          canvas.getContext("2d").drawImage(img, 0, 0, w, h);
+          // 压缩为 JPEG，体积通常为原图的 1/50 ~ 1/100
+          avatarBase64 = canvas.toDataURL("image/jpeg", AVATAR_QUALITY);
+          $("avatar-preview").src = avatarBase64;
+          $("avatar-preview").style.display = "block";
+          if (avatarBase64.length > 80000) console.warn("头像仍偏大：" + (avatarBase64.length/1024).toFixed(0) + "KB");
+        } catch (err) {
+          // 兜底：直接用原图（极少触发）
+          avatarBase64 = e.target.result;
+          $("avatar-preview").src = avatarBase64;
+          $("avatar-preview").style.display = "block";
+        }
+      };
+      img.onerror = function() { alert("图片读取失败，请换一张"); ev.target.value = ""; };
+      img.src = e.target.result;
     };
+    reader.onerror = function() { alert("文件读取失败"); };
     reader.readAsDataURL(file);
   });
 
